@@ -5,8 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Frost &#8212; Frost  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flask.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -16,21 +17,33 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Frequently Asked Questions" href="FAQ.html" />
-    <link rel="prev" title="Welcome to Frost’s documentation!" href="index.html" />
+    <link rel="prev" title="Frost’s documentation!" href="index.html" />
+  <script>DOCUMENTATION_OPTIONS.URL_ROOT = './';</script>
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
   </head><body>
-  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="FAQ.html" title="Frequently Asked Questions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Frost’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Frost  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Frost</a></li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          
-
           <div class="body" role="main">
             
   <div class="section" id="frost">
@@ -736,47 +749,68 @@ freshness</a>).</p>
 </div>
 
 
+            <div class="clearer"></div>
           </div>
-          
         </div>
       </div>
+  <span id="sidebar-top"></span>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Frost</a></h1>
+  
+    
+  
 
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#custom-test-config">Custom Test Config</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#development">Development</a></li>
+  <h3>Contents</h3>
+  <ul>
+<li><a class="reference internal" href="#">Frost</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#installing">Installing</a></li>
+<li><a class="reference internal" href="#id1">Usage</a></li>
+<li><a class="reference internal" href="#running">Running</a><ul>
+<li><a class="reference internal" href="#iam-policy-for-frost">IAM Policy for frost</a></li>
+<li><a class="reference internal" href="#setting-up-gcp-tests">Setting up GCP tests</a><ul>
+<li><a class="reference internal" href="#enabling-required-api-s-for-your-project">Enabling required API’s for your project</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Architecture.html">Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CodingConventions.html">Conventions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="MozillaDeployment.html">Mozilla Deployment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="NewServices.html">Adding a New Service</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ContributingDocumentation.html">Contributing Documentation</a></li>
+<li><a class="reference internal" href="#setting-up-gsuite-tests">Setting up GSuite tests</a></li>
 </ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
+</li>
+<li><a class="reference internal" href="#caching">Caching</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#custom-test-config">Custom Test Config</a><ul>
+<li><a class="reference internal" href="#test-exemptions">Test Exemptions</a><ul>
+<li><a class="reference internal" href="#enabling-regex-for-test-id">Enabling regex for test ID</a></li>
+<li><a class="reference internal" href="#test-severity">Test Severity</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#aws-config">AWS Config</a></li>
+<li><a class="reference internal" href="#gsuite-config">GSuite Config</a></li>
+<li><a class="reference internal" href="#test-accuracy">Test Accuracy</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#development">Development</a><ul>
+<li><a class="reference internal" href="#goals">Goals</a></li>
+<li><a class="reference internal" href="#non-goals">Non-Goals</a></li>
+<li><a class="reference internal" href="#design">Design</a><ul>
+<li><a class="reference internal" href="#file-layout">File Layout</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adding-an-example-test">Adding an example test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Navigation</h3>
 <ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Frost’s documentation!</a></li>
-      <li>Next: <a href="FAQ.html" title="next chapter">Frequently Asked Questions</a></li>
-  </ul></li>
+  <li><a href="index.html">Overview</a>
+    <ul>
+          <li>Previous: <a href="index.html" title="previous chapter">Frost’s documentation!</a>
+          <li>Next: <a href="FAQ.html" title="next chapter">Frequently Asked Questions</a>
+    </ul>
+  </li>
 </ul>
-</div>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
@@ -787,32 +821,16 @@ freshness</a>).</p>
     </div>
 </div>
 <script>$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2020.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/readme-include.md.txt"
-          rel="nofollow">Page source</a>
+  
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
     </div>
+  <script src="_static/version_warning_offset.js"></script>
 
-    
-
-    
   </body>
 </html>
